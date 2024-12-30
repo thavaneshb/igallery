@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALLERY</title>
     <style>
+        .footer
+        {
+            background-color: cyan;
+            color: red;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -110,9 +120,11 @@
         .close-btn:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
+        
     </style>
 </head>
 <body>
+
     <div class="title">MY GALLERY</div> 
     
     <div class="gallery-container">
@@ -135,6 +147,7 @@
             <img src="img6.jpeg" alt="Image 6">
         </div>
     </div>
+    
 
     <div class="slider" id="slider">
         <button class="close-btn" id="close-btn">&#10006;</button>
@@ -142,7 +155,8 @@
         <img src="" alt="Slider Image" id="slider-img">
         <span class="arrow right" id="next">&#10095;</span>
     </div>
-     Designed And Developed BY :B.THAVANESH
+    
+    
     <script>
         const images = document.querySelectorAll('.gallery-item img');
         const slider = document.getElementById('slider');
@@ -183,6 +197,7 @@
             closeBtn.style.display = 'none';
         });
     </script>
-
+    
+<div class="footer">Design and devoloped B.thavanesh</div>
 </body>
 </html>
